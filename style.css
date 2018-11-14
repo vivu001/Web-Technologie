@@ -1,0 +1,72 @@
+*{
+  font-family: Arial, sans-serif;
+}
+h1 {
+  color: orange;
+}
+input:focus {
+  border: 1px solid lightblue;
+  outline: none;
+}
+input:invalid {
+  border-color: rgb(228, 112, 75);
+}
+input:hover {
+  background: rgb(193, 234, 251);
+}
+aside {
+  color:rgb(157, 56, 62);
+}
+nav a:hover {
+  background: rgb(231, 226, 211);
+}
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    table-layout: fixed; width: 60%;
+}
+thead {
+  background: rgb(237, 197, 233);
+  color: green;
+}
+tbody tr:nth-child(4n-3), tr:nth-child(4n-2) {
+  background: rgb(240, 151, 113);
+}
+.email::before {
+  content: url(email_icon.png);
+}
+
+/* erforderliche Eingabe */
+input:required::after {
+  content: "(erforderliche Eingabe)";
+}
+
+#container {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 250px;
+  grid-template-rows: 30px 30px 30px 30px 30px 30px 30px;
+  grid-template-areas: "area1  area2"
+                       "area3  area4"
+                       "area5  area6"
+                       "area7  area8"
+                       "area9  area10"
+                       "area11 area12"
+                       "area13 area14"
+                       ".      area14";
+}
+#item1 { grid-area: area1;}
+#item2 { grid-area: area2;}
+#item3 { grid-area: area3;}
+#item4 { grid-area: area4;}
+#item5 { grid-area: area5;}
+#item6 { grid-area: area6;}
+#item7 { grid-area: area7;}
+#item8 { grid-area: area8;}
+#item9 { grid-area: area9;}
+#item10 { grid-area: area10;}
+#item11 { grid-area: area11;}
+#item12 { grid-area: area12;}
+#item12 { grid-area: area12;}
+#item13 { grid-area: area13;}
+#item14 { grid-area: area14;}
